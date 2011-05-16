@@ -18,34 +18,11 @@ from google.appengine.ext import webapp
 from google.appengine.ext.webapp import util
 from google.appengine.ext import db
 
-class IpLog(db.Model):
-  author = db.UserProperty()
-  content = db.StringProperty(multiline=True)
-  date = db.DateTimeProperty(auto_now_add=True)
-
 
 class MainHandler(webapp.RequestHandler):
     def get(self):
-        if self.request.get('katsu'):            
-            self.response.out.write('<b>' + self.request.get('katsu') + '</b>')
-            x = self.request.get('katsu')
-            if x != Logger().entries[-1]:
-                self.response.out.write('<b> OK</b>')
-                
-            else:
-                self.response.out.write('<b> Already in list</b>')
-        elif self.request.get('mode') == 'view':
-            try:
-                for entry in Logger().entries:
-                    self.response.out.write('<b>' + entry + '</b><br>')
-            except Exception as e:
-                self.response.out.write('<b>Error..</b><br>')
-        else:
-            self.response.out.write('<b>' + "Invalid Try..Faggot" + '</b>')
+        self.response.out.write('<b> OK</b>')   
         
-        
-
-
 def main():
     application = webapp.WSGIApplication([('/', MainHandler)],
                                          debug=True)
