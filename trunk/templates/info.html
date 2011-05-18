@@ -1,0 +1,18 @@
+<html>
+<head>
+  <title>Информация о файле</title>
+</head>
+<body>
+  <p style="float: right"><a href="{{logout_url}}">Log Out</a></p>
+  <h1>Информация о файле</h1>
+  <table>
+    <tr><th>Имя файла</th><td>{{file_info.blob.filename}}</td></tr>
+    <tr><th>Размер</th><td>{{file_info.blob.size}} bytes</td></tr>
+    <tr><th>Когда загружен</th><td>{{file_info.uploaded_at}}</td></tr>
+    <tr><th>Кем загружен</th><td>{{file_info.uploaded_by}}</td></tr>
+    <tr><th>Content Type</th><td>{{file_info.blob.content_type}}</td></tr>
+  </table>
+  
+  <p><a href="/file/{{file_info.key.id}}/download">Скачать этот файл</a></p>
+</body>
+</html>

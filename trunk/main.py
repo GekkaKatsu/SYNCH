@@ -18,13 +18,19 @@ from google.appengine.ext import webapp
 from google.appengine.ext.webapp import util
 from google.appengine.ext import db
 
-
-class MainHandler(webapp.RequestHandler):
-    def get(self):
-        self.response.out.write('<b> OK</b>')   
+from views.FileUploadFormHandler import FileUploadFormHandler
+from modules.FileUploadHandler import FileUploadHandler
+from modules.FileInfoHandler import FileInfoHandler
+from modules.FileDownloadHandler import FileDownloadHandler
+from models.FileModel import FileInfo
+from modules import BaseHandler
         
 def main():
-    application = webapp.WSGIApplication([('/', MainHandler)],
+    application = webapp.WSGIApplication([
+                                          ('/', FileUploadFormHandler),
+                                          ('/upload', FileUploadHandler),
+                                          ('/file/([0-9]+)', FileInfoHandler),
+                                          ('/file/([0-9]+)/download', FileDownloadHandler),],
                                          debug=True)
     util.run_wsgi_app(application)
 
