@@ -1,0 +1,43 @@
+
+#header {
+	width:100%;
+	height:20%;
+	display:block;
+	position:relative;
+	background-color: #AAAAAA;	
+}
+
+#rightblock {
+	width:30%;
+	height:100%;
+	right:25%;
+	display:block;
+	position:relative;
+	background-color: #666666  		
+}
+
+#leftblock {
+	width:30%;
+	height:100%;
+	left:25%;
+	display:block;
+	position:relative;	
+	background-color: #777777 	
+}
+
+
+#fileinfo {
+	width:30%;
+	height:40%;
+	display:block;
+	position:relative;	
+	background-color: #888888	
+}
+
+#basefileinfo {
+	
+}
+
+#metafileinfo {
+
+}

@@ -1,0 +1,113 @@
+body
+{
+	height:auto;
+}
+
+footer 
+{
+	display:block;
+}
+
+input {
+	font-size: 15px;
+	font: normal 13px/100% Verdana, Tahoma, sans-serif;  
+    border: solid 1px #E5E5E5;  
+    padding: 12px; 
+    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;    
+    background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));  
+    background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);    
+}
+
+input:hover,input:focus
+{
+	border-color: #C9C9C9;  	
+}
+
+#auth {
+  border: 5px solid #c4c8cc;
+  -moz-box-shadow: 5px 5px 7px #888;
+  -moz-border-radius: 15px;
+  -webkit-box-shadow: 5px 5px 7px #888;
+  -webkit-border-bottom-right-radius: 15px;
+  border: solid 2px #E5E5E5; 
+  position: relative;
+  margin-top:5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  height: 30%
+  margin-top: auto;
+  margin-bottom: auto;
+  display:block;
+}
+
+#auth p {
+	
+}
+
+#authform input[type="text"], #authform input[type="password"]
+{
+	padding:15px;
+	margin-left: auto;
+	margin-right: auto;
+	width:80%;
+	font-size: 2.0em;
+  	font-family: Serif;
+  	letter-spacing: 0.1em;
+  	color: #888888;
+  	display: block;
+}
+
+#authform h1 {
+  font-size: 2.5em;
+  font-family: Georgia;
+  letter-spacing: 0.1em;
+  text-shadow: 1px 1px 1px rgba(255,255,255,0.6);
+  text-align: center;
+}
+
+#authform h3 {
+  font-size: 1.0em;
+  font-family: Georgia;
+  letter-spacing: 0.1em;
+  text-shadow: 1px 1px 1px rgba(255,255,255,0.6);
+  text-align: center;
+}
+
+#authtext
+{
+ 	font-size: 1.5em;
+  	font-family: Serif;
+  	letter-spacing: 0.1em;	
+  	color: #888888;
+  	margin-left: 10px;
+}
+
+#authform input[type="submit"] {  
+    -webkit-border-radius: 15px;  
+    -moz-border-radius: 15px; 
+    padding: 9px 15px;  
+    border: 1;  
+    font-size: 1.0em;
+    color: #000000;
+    font-family: sans-serif ;  
+   	margin-left: auto;
+   	margin-right: auto;
+   	display: block;
+   	padding-left: 50px;
+   	padding-right: 50px;
+   	
+ }
+ 
+ #authform input[type="submit"]:active
+ {
+	-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;    
+    background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #DDDDDD), to(#FFFFFF));  
+    background: -moz-linear-gradient(top, #FFFFFF, #DDDDDD 1px, #FFFFFF 25px);  	
+ }
+ 
+   
+ 

@@ -1,0 +1,38 @@
+<html>
+<head>
+  <title>SYNCH {{file_info.blob.filename}} File Information </title>
+</head>
+<body>
+<div id="header">
+</div>
+<div id="container">
+	<div id="rightblock">	
+	</div>
+	<div id="fileinfo">
+		<div id="basefileinfo">
+		<table>			
+			{% for field in fileinfocolumns.items %}
+			<tr>
+				<td>{{field.0}}</td>
+				<td>{{field.1}}</td>			
+			</tr>
+			{% endfor %}
+		</table>
+		</div>
+		<div id="metafileinfo">
+		<table>
+			{% for metainfofield in metafileinfocolumns.items %}
+			<tr>
+					<td>{{ metainfofield.0 }}</td>
+					<td>{{ metainfofield.1 }}</td>			
+			</tr>
+			{% endfor %}
+		</table>
+		</div>
+	</div>
+	
+	<div id="leftblock">	
+	</div>
+</div>
+</body>
+</html>
