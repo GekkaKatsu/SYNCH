@@ -1,9 +1,38 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>Index</title>
+<title>SYNCH Login Page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<link rel="stylesheet" href="/css/user/login.css" type="text/css" />
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23833811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+ 
 </head>
 <body>
-<b>SYNCH LogIn<br></b>
-<b>LogIN</b>
+<div id="container">
+	<div id="auth">
+	 	<form action="login" method="post" id="authform">
+		  	<h1>SYNCH.su</h1>
+		  	<h3>Авторизация</h3>
+		  	<p id="authtext">Логин:</p>
+		  	<input type="text" name="email" id="emailfield">
+		  	<p id="authtext">Пароль:</p>
+		  	<input type="password" name="password" id="passwordfield">
+			<p><input type="submit" value="Вход"></p>
+		</form>
+	 </div>
+</div>
 </body>
 </html>

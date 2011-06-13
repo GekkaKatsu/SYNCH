@@ -1,8 +1,21 @@
-application: synch
+application: synchdbg
 version: 1
 runtime: python
 api_version: 1
 
 handlers:
+
+- url: /css
+  static_dir: static/css
+
+- url: /css/user
+  static_dir: static/css/user
+
+- url: /jquery
+  static_dir: static/jquery
+  
 - url: .*
   script: main.py
+
+
+  

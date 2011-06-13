@@ -1,9 +1,41 @@
 <html>
 <head>
 <title>Index</title>
+<script type="text/javascript" src="/jquery/jquery.js"></script>
+<script type="text/javascript" src="/jquery/jquery.dataTables.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/css/user/filetable.css">
+
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function() {
+		$('#example').dataTable();
+	} );
+</script>
+
 </head>
 <body>
-<b>SYNCH join<br></b>
-<b>Yea!Baby Logged in , and there is profile</b>
+<b>Baby it's ok..<br></b>
+	<div class = "jtable">
+		<table id="example">
+		<thead>
+			<tr>
+				<th>File Name</th>
+				<th>File Size</th>
+				<th>Uploaded at</th>
+				<th>Content type</th>
+			</tr>
+		</thead>
+		<tbody>
+		{% for file in files %}
+			<tr>
+				<td>{{file.blob.filename}}</td>
+				<td>{{file.blob.size}}</td>
+				<td>{{file.uploaded_at}}</td>
+				<td>{{file.blob.content_type}}</td>	
+			</tr>
+		{% endfor %}
+		</tbody>
+		</table>
+	</div>
 </body>
 </html>

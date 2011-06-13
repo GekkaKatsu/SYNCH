@@ -21,12 +21,18 @@ from handlers.MainHandler import MainHandler
 from handlers.LoginHandler import LoginHandler
 from handlers.RegisterHandler import RegisterHandler
 from handlers.UserProfileHandler import UserProfileHandler
+from handlers.WebFileInfoHandler import FileInfoHandler
+from handlers.WebFrontendUploadHandler import WebFrontendUploadHandler
+from handlers.WebDataUploadHandler import FileUploadHandler
 
 def main():
     application = webapp.WSGIApplication([('/', MainHandler),
                                          ('/login', LoginHandler),
                                          ('/register', RegisterHandler),
-                                         ('/profile', UserProfileHandler)],
+                                         ('/userprofile', UserProfileHandler),
+                                         ('/fileupload',WebFrontendUploadHandler),
+                                         ('/upload',FileUploadHandler),
+                                         ('/file/([0-9]+)',FileInfoHandler)],
                                          debug=True)
     util.run_wsgi_app(application)
 
