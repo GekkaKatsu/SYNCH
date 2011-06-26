@@ -8,8 +8,9 @@
 #include <QObject>
 #include <QFileSystemWatcher>
 #include <QStringList>
+#include "synchwatcher.h"
 
-class SWatcher : public QFileSystemWatcher
+class SYNCHWATCHER_EXPORT SWatcher : public QFileSystemWatcher
 {
     Q_OBJECT
 public:

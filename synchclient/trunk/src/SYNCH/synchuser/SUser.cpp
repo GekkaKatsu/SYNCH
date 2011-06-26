@@ -9,9 +9,6 @@ SUser::SUser(QObject *parent) :
 {
 }
 
-SUser * SUser::sUser()
+QByteArray SUser::userSignature()
 {
-    if( !m_sUserInstanse )
-        m_sUserInstanse = new SUser();
-    return m_sUserInstanse;
 }

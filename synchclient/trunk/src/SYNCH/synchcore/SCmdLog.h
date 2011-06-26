@@ -36,4 +36,6 @@ private:
     QStringList m_loggingEntries;
 };
 
+SYNCHCORE_EXPORT SCmdLog* sLog();
+
 #endif // SCMDLOG_H

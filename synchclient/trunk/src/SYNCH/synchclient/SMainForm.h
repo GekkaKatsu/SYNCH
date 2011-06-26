@@ -21,6 +21,7 @@ public:
     ~SMainForm();
 public slots:
     void addPathsForWatch();
+    void sendDbgEntry();
 
 private:
     Ui::SMainForm *ui;

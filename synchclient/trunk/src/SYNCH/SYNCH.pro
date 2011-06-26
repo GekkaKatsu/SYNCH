@@ -1,11 +1,7 @@
-TEMPLATE = subdirs
+TEMPLATE = subdirs ordered
 
-SUBDIRS += \
-    synchclient \
-    synchevent \
-    synchwatcher \
+SUBDIRS += synchuser synchcore  synchwatcher synchnetworkmanager synchclient
+  #  synchevent \
   #  synchnetio \
   #  synchfileio \
-  #  synchnetworkmanager \
-    synchuser \
-    synchcore
+

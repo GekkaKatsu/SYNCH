@@ -6,18 +6,18 @@
 #define SUSER_H
 
 #include <QObject>
+#include "synchuser.h"
 
-class SUser : public QObject
+class SYNCHUSER_EXPORT SUser : public QObject
 {
     Q_OBJECT
 public:
-    SUser* sUser();
+    SUser(QObject *parent = 0);
 signals:
 
 public slots:
+    QByteArray userSignature();
 
-private:
-    explicit SUser(QObject *parent = 0);
 private:
     SUser * m_sUserInstanse;
 };

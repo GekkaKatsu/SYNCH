@@ -11,6 +11,11 @@ SCmdLog::SCmdLog(QObject *parent) :
 {
 }
 
+SCmdLog * sLog()
+{
+    return SCmdLog::instance();
+}
+
 SCmdLog * SCmdLog::instance()
 {
     if( !m_cmdLog )
